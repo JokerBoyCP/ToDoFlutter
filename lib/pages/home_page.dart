@@ -84,23 +84,34 @@ class _HomePageState extends State<HomePage> {
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: [
-            const DrawerHeader(
+            DrawerHeader(
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 102, 102, 102),
+                color: Color.fromARGB(255, 119, 119, 119),
               ),
-              child: Text(
-                'Never forget anything with listiify',
+              child: RichText(
+                text: new TextSpan(
+                    style: GoogleFonts.openSans(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
+                    children: <TextSpan>[
+                      new TextSpan(text: 'Never forget anything with'),
+                      new TextSpan(
+                        text: ' listiify.',
+                        style: TextStyle(color: Colors.orange),
+                      ),
+                    ]),
               ),
             ),
             ListTile(
-              title: const Text('Item 1'),
+              title: Text('Item 1', style: GoogleFonts.openSans()),
               onTap: () {
                 // Update the state of the app.
                 // ...
               },
             ),
             ListTile(
-              title: const Text('Item 2'),
+              title: Text('Item 2'),
               onTap: () {
                 // Update the state of the app.
                 // ...
