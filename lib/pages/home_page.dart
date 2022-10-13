@@ -104,14 +104,22 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             ListTile(
-              title: Text('Item 1', style: GoogleFonts.openSans()),
+              leading: Icon(Icons.tips_and_updates_outlined),
+              hoverColor: Colors.black,
+              title: Text(
+                  textAlign: TextAlign.start,
+                  '"According to Science Being Forgetful Is Actually a Sign You Are Intelligent"',
+                  style: GoogleFonts.openSans(
+                      fontStyle: FontStyle.italic,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600)),
               onTap: () {
                 // Update the state of the app.
                 // ...
               },
             ),
             ListTile(
-              title: Text('Item 2'),
+              // title: Text('Item 2'),
               onTap: () {
                 // Update the state of the app.
                 // ...

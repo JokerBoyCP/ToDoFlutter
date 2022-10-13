@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ToDoTile extends StatelessWidget {
   final String taskName;
@@ -43,13 +44,15 @@ class ToDoTile extends StatelessWidget {
               Checkbox(
                 value: taskCompleted,
                 onChanged: onChanged,
-                activeColor: Colors.black,
+                activeColor: Colors.orange,
               ),
 
               // task name
               Text(
                 taskName,
                 style: TextStyle(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 16,
                   decoration: taskCompleted
                       ? TextDecoration.lineThrough
                       : TextDecoration.none,
