@@ -3,7 +3,7 @@
    <application
         android:label="listiify"
         android:name="${applicationName}"
-        android:icon="assets/Listiify.png">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
