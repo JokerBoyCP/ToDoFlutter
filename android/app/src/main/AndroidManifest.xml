@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.todoflutter">
    <application
-        android:label="Listiify"
+        android:label="listiify"
         android:name="${applicationName}"
-        android:icon="@mipmap/Listiify_logo.png">
+        android:icon="assets/Listiify.png">
         <activity
             android:name=".MainActivity"
             android:exported="true"
